@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./src/app.ts",
-    "test": "npm jest",
+    "test": "jest",
     "build": "tsc -p ./"
   },
   "keywords": [],
@@ -25,7 +25,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "git-commit-msg-linter": "^3.1.0",
+    "husky": "^4.3.8",
     "jest": "^27.0.4",
+    "lint-staged": "^11.0.0",
     "nodemon": "^2.0.7",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
