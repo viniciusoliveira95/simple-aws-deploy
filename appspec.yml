@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /build/app.js
-    destination: /app/
+  - source: /
+    destination: /home/app
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh

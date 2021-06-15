@@ -4,6 +4,7 @@ node_js:
 script:
   - eslint 'src/**'
   - npm run test
+  - npm run build
 deploy:
   - provider: codedeploy
     revision_type: github
@@ -12,5 +13,6 @@ deploy:
     application: app-code-deploy
     deployment_group: app-cd-group
     region: us-east-1
-  - on:
-     branch: production
+    wait_until_deployed: true
+  on:
+    branch: master
