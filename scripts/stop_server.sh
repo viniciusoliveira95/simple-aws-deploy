@@ -1,3 +1,3 @@
 #!/bin/bash
 source /home/ec2-user/.bash_profile
-npm run stop
+pm2 stop app
