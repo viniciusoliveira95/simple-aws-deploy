@@ -6,13 +6,13 @@ script:
   - npm run test
   - npm run build
 deploy:
-  - provider: codedeploy
-    revision_type: github
-    access_key_id: $ACCESS_KEY_ID
-    secret_access_key: $SECRET_ACCESS_KEY
-    application: app-code-deploy
-    deployment_group: app-cd-group
-    region: us-east-1
-    wait_until_deployed: true
+  provider: codedeploy
+  revision_type: github
+  access_key_id: $ACCESS_KEY_ID
+  secret_access_key: $SECRET_ACCESS_KEY
+  application: app-code-deploy
+  deployment_group: app-cd-group
+  region: us-east-1
+  wait_until_deployed: true
   on:
     branch: master
