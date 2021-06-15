@@ -12,5 +12,5 @@ deploy:
     application: app-code-deploy
     deployment_group: app-cd-group
     region: us-east-1
-  on:
-    branch: production
+  - on:
+     branch: production
