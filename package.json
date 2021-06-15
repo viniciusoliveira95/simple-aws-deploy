@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/app.ts",
+    "dev": "nodemon ./src/app.ts",
+    "start": "pm2 start ./build/app.js --name app",
+    "stop": "pm2 stop app",
     "test": "jest",
     "build": "tsc -p ./"
   },
