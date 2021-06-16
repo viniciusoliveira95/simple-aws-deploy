@@ -3,19 +3,11 @@ os: linux
 files:
   - source: /
     destination: /home/app
+    overwrite: true
 hooks:
-  afterInstall:
-    - location: scripts/install_dependencies.sh
+  BeforeInstall:
+    - location: scripts/before-install-hook.sh
       timeout: 300
-      runas: root
-    - location: scripts/build.sh
+  AfterInstall:
+    - location: scripts/after-install-hook.sh
       timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: scripts/start_server.sh
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server.sh
-      timeout: 300
-      runas: root

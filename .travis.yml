@@ -10,8 +10,8 @@ deploy:
   revision_type: github
   access_key_id: $ACCESS_KEY_ID
   secret_access_key: $SECRET_ACCESS_KEY
-  application: app-code-deploy
-  deployment_group: app-cd-group
+  application: codedeploy-app
+  deployment_group: codedeploy-app-group
   region: us-east-1
   wait_until_deployed: true
   on:
