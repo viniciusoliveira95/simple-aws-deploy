@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/app
+    destination: /usr/share/nginx/html
     overwrite: true
 hooks:
   BeforeInstall:

@@ -1,6 +1,6 @@
 #!/bin/bash
 source /home/ec2-user/.bash_profile
 set -e
-cd /home/app
+cd /usr/share/nginx/html
 npm install --prod
 npm run build
